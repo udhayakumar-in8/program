@@ -1,5 +1,5 @@
-exec: read.o alpha.o num.o special.o lines.o space.o smallstr.o bigstr.o occurance.o palindrome.o vowels.o const.o lline.o
-	gcc read.c alpha.c num.c special.c lines.c space.o smallstr.c bigstr.c occurance.c palindrome.c vowels.c const.c lline.c -o exec
+exec: read.o alpha.o num.o special.o lines.o space.o smallstr.o bigstr.o occurance.o palindrome.o vowels.o const.o lline.o repcount.o
+	gcc read.c alpha.c num.c special.c lines.c space.o smallstr.c bigstr.c occurance.c palindrome.c vowels.c const.c lline.c repcount.c -o exec
 
 read.o   : read.c
 	cc -c read.c
@@ -27,3 +27,5 @@ const.o     :const.c
 	cc -c const.c
 lline.o	    :lline.c
 	cc -c lline.c
+recount.o   :repcount.c
+	cc -c repcount.c
