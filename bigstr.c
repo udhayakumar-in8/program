@@ -29,4 +29,5 @@ void bigword(char *rec)
 
     printf("The largest word in the file is: %s\n", largest);
     fclose(fp);
+    printf("bigstring..\n");
 }
